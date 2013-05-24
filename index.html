@@ -6,8 +6,7 @@
 
     <title>Mejores Amigos: Programadores y Periodistas — Manuel Aristarán</title>
 
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <meta name="author" content="Manuel Aristarán">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -55,7 +54,7 @@
           <section data-state="white">
             <p>
               <img src="img/knight-logo.svg" width="600" class="noborder" style="vertical-align: middle;">
-              <span style="font-size: 100px; font-weight: bold;">+</span>
+              <span style="font-size: 100px; font-weight: bold; vertical-align: middle;">+</span>
               <img src="img/Mozilla_Foundation_logo.svg" class="noborder" style="vertical-align: middle;">
             </p>
             <p style="font-size: 100px; font-weight: bold;">=</p>
@@ -83,17 +82,17 @@
             </ul>
           </section>
         </section>
-        <section id="la-plata" data-image="img/INUNDACION.png" >
-          <section data-image="img/INUNDACION.png" >
+        <section id="la-plata" data-image="img/INUNDACION.png">
+          <section data-image="img/INUNDACION.png">
             <h1>Un caso reciente: inundaciones de abril de 2013 en la ciudad de La Plata</h1>
           </section>
-          <section data-image="img/INUNDACION.png" >
+          <section data-image="img/INUNDACION.png">
             <h2>Se sospechaba que había más víctimas que las que reconocía el gobierno</h2>
           </section>
-          <section data-image="img/INUNDACION.png" >
+          <section data-image="img/INUNDACION.png">
             <h2><strong>LA NACIÓN</strong> accedió a los registros de fallecimiento de los primeros 15 días de Abril</h2>
           </section>
-          <section data-image="img/INUNDACION.png" >
+          <section data-image="img/INUNDACION.png">
             <h2>El equipo de <strong>LA NACIÓN DATA</strong> sistematizó esa información en una base de datos</h2>
             <ul>
               <li><em>Data-entry</em> manual de las actas, omitiendo información sensible (nombres, etc)</li>
@@ -165,12 +164,12 @@
             </ul>
           </section>
           <section data-state="reallywhite">
-            <h3 style="color: black;">Del sitio municipal a Gasto Público Bahiense</h3>
-            <p class="screenshots-gpb">
-              <img style="vertical-align: middle;" src="img/antiguo-bahiablancagovar.png" alt="" width="42%" valign="middle"/>
+            <h3 style="color: black;">Del sitio municipal a <a href="http://gastopublicobahiense.org">Gasto Público Bahiense</a></h3>
+            <div class="screenshots-gpb">
+              <img style="vertical-align: middle;" src="img/antiguo-bahiablancagovar.png" width="42%" />
               <span style="vertical-align: middle; color:red; font-size: 100px; margin: 20px; ">➡</span>
               <img style="vertical-align: middle;" src="img/gpb-screenshot.png"  width="42%">
-            </p>
+            </div>
           </section>
           <section data-state="reallywhite">
             <img src="img/gpb-sololocal.png" class="noborder">
@@ -193,6 +192,11 @@
           <section data-state="whiteout">
             <h3 class="fragment visible">Hubo mucha cobertura periodística <em>acerca de</em> gastopublicobahiense.org</h3>
             <h3 class="fragment">...pero pocos artículos que utilicen los datos que allí se presentan.</h3>
+          </section>
+          <section data-state="whiteout">
+            <h3 class="fragment visible">gastopublicobahiense.org es software libre</h3>
+            <h3 class="fragment">Su <a href="http://github.com/jazzido/GPB">código fuente</a> puede ser extendido y reutilizado</h3>
+            <h3 class="fragment">Pronto: versiones de GPB para otros dos municipios argentinos</h3>
           </section>
         </section>
         <section id="newsroom-structure" data-image="img/assembly-line.png" >
@@ -223,6 +227,15 @@
           <section data-state="reallywhite" style="width: 100% !important">
             <iframe src="http://interactivos.lanacion.com.ar/censo/" width="100%" height="100%" style="border: 2px solid #777; width: 100% !important"></iframe>
             <pre style="text-align: center; box-shadow: none !important;"><a href="http://interactivos.lanacion.com.ar/censo">http://interactivos.lanacion.com.ar/censo</a></pre>
+          </section>
+          <section>
+            <h3>Declaraciones Juradas del Poder Ejecutivo</h3>
+            <img src="img/ddjj-papel.png" height="70%">
+          </section>
+          <section>
+            <h3><em>News application</em> de <a href="http://www.lanacion.com.ar/data">La Nación DATA</a></h3>
+            <iframe width="645" height="80%" frameborder="0" src="http://interactivos.lanacion.com.ar/ddjj/">&nbsp;</iframe>
+            <p style="font-size: 80%"><a href="http://www.lanacion.com.ar/1546303-los-bienes-de-los-funcionarios-en-la-primera-news-application-de-la-nacion">"Los bienes de los funcionarios, en una news application de LA NACION"</a></p>
           </section>
         </section>
         <section id="literacy" data-state="soothe">
@@ -308,15 +321,15 @@ stateBg.style.backgroundImage = '';
 
 });
 
-$(document).on({
-mouseenter: function() { $(this).css({'transform': 'scale(2.5)', 'z-index': 1000 }); },
-mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
-}, '.paginas-nota-desafio-economico img, .screenshots-gpb img');
-
-$(document).on({
-mouseenter: function() { $(this).css({'transform': 'scale(2)', 'z-index': 1000 }); },
-mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
-}, '.screenshots-gpb img');
+// $(document).on({
+// mouseenter: function() { $(this).css({'transform': 'scale(2.5)', 'z-index': 1000 }); },
+// mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
+// }, '.paginas-nota-desafio-economico img');
+//
+// $(document).on({
+// mouseenter: function() { $(this).css({'transform': 'scale(1.8)', 'z-index': 1000 }); },
+// mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
+// }, '.screenshots-gpb img');
 
 
 

@@ -25,3 +25,15 @@ h2 strong {
 .paginas-nota-desafio-economico img {
     -webkit-transform-origin: 50% 100% ;
 }
+
+.paginas-nota-desafio-economico img:hover {
+    -webkit-transform:scale(2.5);
+    -moz-transform:scale(2.5);
+    cursor: pointer;
+}
+
+.screenshots-gpb img:hover {
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    cursor: pointer;
+}
