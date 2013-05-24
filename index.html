@@ -165,6 +165,14 @@
             </ul>
           </section>
           <section data-state="reallywhite">
+            <h3 style="color: black;">Del sitio municipal a Gasto Público Bahiense</h3>
+            <p class="screenshots-gpb">
+              <img style="vertical-align: middle;" src="img/antiguo-bahiablancagovar.png" alt="" width="42%" valign="middle"/>
+              <span style="vertical-align: middle; color:red; font-size: 100px; margin: 20px; ">➡</span>
+              <img style="vertical-align: middle;" src="img/gpb-screenshot.png"  width="42%">
+            </p>
+          </section>
+          <section data-state="reallywhite">
             <img src="img/gpb-sololocal.png" class="noborder">
           </section>
           <section data-state="reallywhite">
@@ -303,9 +311,13 @@ stateBg.style.backgroundImage = '';
 $(document).on({
 mouseenter: function() { $(this).css({'transform': 'scale(2.5)', 'z-index': 1000 }); },
 mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
-}, '.paginas-nota-desafio-economico img');
+}, '.paginas-nota-desafio-economico img, .screenshots-gpb img');
 
-$('.paginas-nota-desafio-economico')
+$(document).on({
+mouseenter: function() { $(this).css({'transform': 'scale(2)', 'z-index': 1000 }); },
+mouseleave: function() { $(this).css({'transform': 'scale(1)', 'z-index': 1 });  },
+}, '.screenshots-gpb img');
+
 
 
     </script>
